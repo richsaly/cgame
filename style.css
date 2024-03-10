@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main{
+    height: 500px;
+    width: 700px;
+    background-color: rgb(125, 125, 221);
+    margin-left: 23%;
+    margin-top: 50px;
+}
+
+marquee{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+
+}
+.sub-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 50px 50px;
+}
+.text{
+    color: white;
+    width: 50%;
+    height: 100%;
+}
+.text h1{
+    /* padding-top: 30px; */
+    height: 35vh;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 15px;
+    border-left: 10px solid rgb(226, 103, 103);
+
+}
+.game-box{
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.game-box .buttonInput{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    gap: 10px;
+}
+.buttonInput input, .buttonInput button{
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+}
+.buttonInput button{
+    background-color: rgb(4, 4, 58);
+    color: white;
+    font-size: larger;
+    border: none;
+    outline: none;
+}
+.buttonInput input{
+    padding: 5px;
+}
+
+/* mobile view */
+
+@media  (min-width: 100px) and (max-width: 540px){
+      body{
+        background-color: rgb(23, 23, 190);
+      }
+     .main{
+        margin: 0 auto;
+     }
+
+     .text h1{
+        border-top: 10px solid rgb(226, 103, 103);
+        border-left: 0;
+     }
+
+     .sub-main{
+        flex-direction: column;
+     }
+}
